@@ -5,13 +5,13 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { connect } from 'react-redux';
 import { actions } from 'react-redux-form';
 
-import Menu from './Menu';
-import MenuItemDetail from './Dishdetail';
+import Menu from '../pages/Menu';
+import MenuItemDetail from '../pages/MenuItemDetail';
 import Header from '../ui/Header';
 import Footer from '../ui/Footer';
-import Home from './Home';
+import Home from '../pages/Home';
 import Contact from '../pages/Contact';
-import About from './About';
+import About from '../pages/About';
 import { postComment, fetchDishes, fetchComments, fetchPromos, fetchLeaders, postFeedback } from '../redux/ActionCreators';
 
 import { DISHES } from '../shared/dishes';

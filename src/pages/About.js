@@ -2,7 +2,7 @@ import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { FadeTransform, Fade, Stagger } from 'react-animation-components';
-import { Loading } from './Loading';
+import { Loading } from '../components/Loading';
 import { baseUrl } from '../shared/baseUrl';
 
 function RenderLeader({leader, isLoading, errMess}) {

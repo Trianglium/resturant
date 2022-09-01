@@ -1,6 +1,7 @@
 import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
+// eslint-disable-next-line
 import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 import { Loading } from '../components/Loading';
 import { baseUrl } from '../shared/baseUrl';

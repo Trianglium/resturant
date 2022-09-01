@@ -1,10 +1,9 @@
 import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
-// eslint-disable-next-line
-import { FadeTransform, Fade, Stagger } from 'react-animation-components';
-import { Loading } from '../components/Loading.component';
-import { baseUrl } from '../shared/baseUrl';
+import { Fade, Stagger } from 'react-animation-components';
+import { Loading } from '../Loading.component';
+import { baseUrl } from '../../shared/baseUrl';
 
 function RenderLeader({leader, isLoading, errMess}) {
   if (isLoading) {

@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: #131517;
 }
 
 .App-logo {
@@ -26,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #3d3d3d;
 }
 
 @keyframes App-logo-spin {
@@ -51,15 +50,14 @@
 }
 
 .footer{
-    background-color: #D1C4E9;
+    background-color: #e7e7e7df;
     margin:0px auto;
     padding: 20px 0px 20px 0px;
 }
 .jumbotron {
     padding:70px 30px 70px 30px;
     margin:0px auto;
-    background: #9575CD ;
-    color:floralwhite;
+    color: white;
 }
 
 address{
@@ -69,7 +67,7 @@ address{
 }
 
 .navbar-dark {
-    background-color: #512DA8;
+    background-color: #ffffff;
 }
 
 .page-enter {

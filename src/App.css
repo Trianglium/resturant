@@ -24,10 +24,6 @@
   color: white;
 }
 
-.App-link {
-  color: #3d3d3d;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -91,4 +87,21 @@ address{
     opacity: 0.01;
     transform: translateX(100%);
     transition: all 300ms ease-out;
+}
+
+
+.breadcrumb-link {
+  text-decoration: none;
+}
+
+
+.quote-review {
+  font-weight: 600;
+}
+
+.quote-review > i {
+  font-size: 24px;
+  padding-left: .25rem;
+  padding-right: .25rem;
+
 }

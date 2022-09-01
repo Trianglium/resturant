@@ -67,7 +67,8 @@ address{
 }
 
 .navbar-dark {
-    background-color: #ffffff;
+    background-color:#e7e7e7df;
+    color: #0f0f0f;
 }
 
 .page-enter {

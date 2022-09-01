@@ -1,4 +1,3 @@
-import { Reducer, initialState } from './reducer';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { createForms } from 'react-redux-form';
 import { InitialFeedback } from './forms';

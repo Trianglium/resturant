@@ -4,13 +4,13 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { connect } from 'react-redux';
 import { actions } from 'react-redux-form';
 
-import Menu from '../pages/Menu';
-import MenuItemDetail from '../pages/MenuItemDetail';
-import Header from '../ui/Header';
-import Footer from '../ui/Footer';
-import Home from '../pages/Home';
-import Contact from '../pages/Contact';
-import About from '../pages/About';
+import Menu from '../pages/Menu.component';
+import MenuItemDetail from '../pages/MenuItemDetail.component';
+import Header from '../ui/Header.component';
+import Footer from '../ui/Footer.component';
+import Home from '../pages/Home.component';
+import Contact from '../pages/Contact.component';
+import About from '../pages/About.component';
 import { postComment, fetchDishes, fetchComments, fetchPromos, fetchLeaders, postFeedback } from '../redux/ActionCreators';
 
 const mapStateToProps = state => {
@@ -86,11 +86,11 @@ class Main extends Component {
             <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
               <Switch location={this.props.location}>
                   <Route path='/home' component={HomePage} />
-                  <Route exact path='/aboutus' component={() => <About leaders={this.props.leaders} />} />} />
+                  <Route exact path='/about' component={() => <About leaders={this.props.leaders} />} />} /{'>'}
                   <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
                   <Route path='/menu/:dishId' component={DishWithId} />
                   <Route exact path='/contact' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} postFeedback={this.props.postFeedback} />} />
-                  <Redirect to="/home" />
+                  <Redirect to='/home' />
               </Switch>
             </CSSTransition>
           </TransitionGroup>

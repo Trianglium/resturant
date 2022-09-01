@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { Switch, Route, Router, Redirect, withRouter } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { connect } from 'react-redux';
 import { actions } from 'react-redux-form';
@@ -85,10 +85,10 @@ class Main extends Component {
         <TransitionGroup>
             <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
               <Switch location={this.props.location}>
-                  <Route path='/home' component={HomePage} />
+                  <Route exact path='/home' component={HomePage} />
                   <Route exact path='/about' component={() => <About leaders={this.props.leaders} />} />} /{'>'}
                   <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
-                  <Route path='/menu/:dishId' component={DishWithId} />
+                  <Route exact path='/menu/:dishId' component={DishWithId} />
                   <Route exact path='/contact' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} postFeedback={this.props.postFeedback} />} />
                   <Redirect to='/home' />
               </Switch>

@@ -1,39 +1,35 @@
 /* center the reviewer-quote in the page */
 .reviewer-quote-wrapper {
     display: flex;
- 
     padding: 0 20px;
  }
  
  /* Blockquote main style */
  .reviewer-quote {
      position: relative;
-     font-family: 'Barlow Condensed', sans-serif;
      max-width: 620px;
      margin: 80px auto;
      align-self: center;
  }
  
  /* Blockquote header */
- .reviewer-quote h1 {
-     font-family: 'Abril Fatface', cursive;
+ .reviewer-quote p {
      position: relative; /* for pseudos */
-     color: #e74848;
-     font-size: 2.8rem;
+     color: #222;
      font-weight: normal;
      line-height: 1;
      margin: 0;
-     border: 2px solid #fff;
+     border: 2px solid rgb(151, 149, 149);
      border: solid 2px;
      border-radius:20px;
      padding: 25px;
  }
  
  /* Blockquote right double quotes */
- .reviewer-quote h1:after {
+ .reviewer-quote p:after {
      content:"";
      position: absolute;
-     border: 2px solid #e74848;
+     border: 2px solid #222;
      border-radius: 0 50px 0 0;
      width: 60px;
      height: 60px;
@@ -44,11 +40,11 @@
      z-index: 3; 
  }
  
- .reviewer-quote h1:before {
+ .reviewer-quote p:before {
      content:"";
      position: absolute;
      width: 80px;
-     border: 6px solid #292a2b;
+     border: 6px solid transparent;
      bottom: -3px;
      left: 50px;
      z-index: 2;
@@ -56,8 +52,7 @@
  
  /* increase header size after 600px */
  @media all and (min-width: 600px) {
-     .reviewer-quote h1 {
-         font-size: 3rem;
+     .reviewer-quote p {
          line-height: 1.2;
     }
  
@@ -66,7 +61,7 @@
  /* Blockquote subheader */
  .reviewer-quote h4 {
      position: relative;
-     color: #ffffff;
+     color: #060606;
      font-size: 1.3rem;
      font-weight: 400;
      line-height: 1.2;

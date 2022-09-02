@@ -1,10 +1,12 @@
 import React from 'react';
 import './About.component.css';
-import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, Card, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Fade, Stagger } from 'react-animation-components';
 import { Loading } from './Loading.component';
+// eslint-disable-next-line
 import { baseUrl } from '../shared/baseUrl';
+//import { Slider, Slide } from './HoverSlider/HoverSlider.component';
 
 function RenderLeader({leader, isLoading, errMess}) {
   if (isLoading) {
@@ -22,34 +24,15 @@ function RenderLeader({leader, isLoading, errMess}) {
 
         <div key={leader.id} className="col-12 mt-5">
           <Stagger in>
-            <Media tag="li">
+            <Media tag="li" className="list-unstyled">
               <Fade in>
-                <div className="row">
-                    <div className="col-8">
-                        <Card>
-                            <CardBody className="bg-faded">
-                                <blockquote className="blockquote">
-                                    <p className="my-3 quote-review"><i class="fa fa-quote-left" aria-hidden="true"></i> Love the Taco Dinner! <i class="fa fa-quote-right" aria-hidden="true"></i></p>
-                                    <footer className="blockquote-footer">Yogi Berra,
-                                    <cite title="Source Title mt-2">The Wit and Wisdom of Yogi Berra,
-                                        P. Pepe, Diversion Books, 2014</cite>
-                                    </footer>
-                                </blockquote>
-                            </CardBody>
-                        </Card>
+                <div className="reviewer-quote-wrapper">
+                    <div className="reviewer-quote">
+                        <p className='lead'>
+                        {leader.designation}
+                        </p>
+                        <h4>&mdash; {leader.name}<br /><em> {leader.designation}</em></h4>
                     </div>
-
-                    <div className="col-4">
-                    <Media>
-                        <Media object src={baseUrl + leader.image} alt={leader.name} />
-                    </Media>
-                    <Media body className="ml-5">
-                        <Media heading>{leader.name}</Media>
-                        <p>{leader.designation}</p>
-                    </Media>
-                        
-                    </div>
-                
                 </div>
               </Fade>
               </Media>

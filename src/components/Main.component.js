@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // eslint-disable-next-line
-import { Route, Routes } from 'react-router-dom';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { connect } from 'react-redux';
 import { actions } from 'react-redux-form';
@@ -12,7 +12,7 @@ import Footer from './Footer.component';
 import Home from './Home.component';
 import Contact from './Contact.component';
 import About from './About.component';
-import withRouter from './withRouter';
+
 import { postComment, fetchDishes, fetchComments, fetchPromos, fetchLeaders, postFeedback } from '../redux/ActionCreators';
 
 const mapStateToProps = state => {
@@ -75,8 +75,6 @@ class Main extends Component {
       );
     }
 
-    console.log("LOCATION = ", this.props.location);
-
 
     return (
       <div>
@@ -84,13 +82,14 @@ class Main extends Component {
         <div>
         <TransitionGroup>
             <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
-              <Routes location={this.props.location}>
+              <Switch location={this.props.location}>
                   <Route path='/home' component={HomePage} />
-                  <Route exact path='/about' component={() => <About leaders={this.props.leaders} />} />  />
+                  <Route exact path='/about' component={() => <About leaders={this.props.leaders} />} />} />
                   <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
                   <Route path='/menu/:dishId' component={DishWithId} />
                   <Route exact path='/contact' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} postFeedback={this.props.postFeedback} />} />
-              </Routes>
+                  <Redirect to="/home" />
+              </Switch>
             </CSSTransition>
           </TransitionGroup>
         </div>

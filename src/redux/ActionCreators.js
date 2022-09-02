@@ -1,5 +1,5 @@
 import * as ActionTypes from './ActionTypes';
-import { baseUrl } from '../shared/baseUrl';
+import { baseUrl, yelpAPI } from '../shared/baseUrl';
 
 export const addComment = (dishId, rating, author, comment) => ({
     type: ActionTypes.ADD_COMMENT,
@@ -222,3 +222,40 @@ export const addFeedback = (feedback) => ({
         .catch(error =>  { console.log('Post Feedback', error.message);
             alert('Your Feedback could not be posted\nError: '+error.message); });
 }; 
+
+export const fetchReviews = () => (dispatch) => {
+
+  dispatch(reviewsLoading());
+
+  return fetch(yelpAPI + 'reviews')
+  .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        var error = new Error('Error ' + response.status + ': ' + response.statusText);
+        error.response = response;
+        throw error;
+      }
+    },
+    error => {
+          var errmess = new Error(error.message);
+          throw errmess;
+    })
+  .then(response => response.json())
+  .then(reviews => dispatch(addReviews(reviews)))
+  .catch(error => dispatch(reviewsFailed(error.message)));
+}
+
+export const reviewsLoading = () => ({
+  type: ActionTypes.REVIEWS_LOADING
+});
+
+export const reviewsFailed = (errmess) => ({
+  type: ActionTypes.REVIEWS_FAILED,
+  payload: errmess
+});
+
+export const addReviews = (reviews) => ({
+  type: ActionTypes.ADD_REVIEWS,
+  payload: reviews
+});

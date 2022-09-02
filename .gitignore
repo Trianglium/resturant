@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# YELP API Client ID and API Key
+yelpAPI.js

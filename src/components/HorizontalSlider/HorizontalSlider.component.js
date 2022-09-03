@@ -1,8 +1,12 @@
-import React from "react";
+import React, { Component } from 'react';
 import './HorizontalSlider.component.css';
 
 
-const slider = 
+const slider = () => {
+    return (
+        <>
+    );
+}
 
 
 const slider = document.querySelector('.gallery');

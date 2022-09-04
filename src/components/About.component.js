@@ -6,7 +6,6 @@ import { Fade, Stagger } from 'react-animation-components';
 import { Loading } from './Loading.component';
 // eslint-disable-next-line
 import { baseUrl } from '../shared/baseUrl';
-//import { Slider, Slide } from './HoverSlider/HoverSlider.component';
 
 function RenderLeader({leader, isLoading, errMess}) {
   if (isLoading) {
@@ -22,7 +21,7 @@ function RenderLeader({leader, isLoading, errMess}) {
   else if (leader != null) {
       return(
 
-        <div key={leader.id} className="col-12 mt-5">
+        <div key={leader.id} className="col-3 mt-5">
           <Stagger in>
             <Media tag="li" className="list-unstyled">
               <Fade in>
@@ -51,7 +50,7 @@ function RenderLeader({leader, isLoading, errMess}) {
 const About = (props) => {
     const leaders = props.leaders.leaders.map((leader) => {
         return (
-          <div className="col-12" key={leader.id}>
+          <div className="col-3" key={leader.id}>
             <RenderLeader leader={leader} isLoading={props.leadersLoading} errMess={props.leadersErrMess} />
           </div>
         );

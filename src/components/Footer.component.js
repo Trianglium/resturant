@@ -19,7 +19,7 @@ function Footer(props) {
             </div>
             <div className="row justify-content-center">
                 <div className="col-auto mt-4">
-                    <p>© Copyright 2022</p>
+                    <p>© Copyright 2022 | Admin</p>
                 </div>
             </div>
         </div>

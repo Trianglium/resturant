@@ -1,10 +1,9 @@
-/* center the reviewer-quote in the page */
+/* Reviews */
 .reviewer-quote-wrapper {
     display: flex;
     padding: 0 20px;
  }
  
- /* Blockquote main style */
  .reviewer-quote {
      position: relative;
      max-width: 620px;
@@ -12,9 +11,8 @@
      align-self: center;
  }
  
- /* Blockquote header */
  .reviewer-quote p {
-     position: relative; /* for pseudos */
+     position: relative;
      color: #222;
      font-weight: normal;
      line-height: 1;
@@ -25,7 +23,6 @@
      padding: 25px;
  }
  
- /* Blockquote right double quotes */
  .reviewer-quote p:after {
      content:"";
      position: absolute;
@@ -78,29 +75,59 @@
  }
 
 
+/* Iframes and Map */
+
 #map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     width: 100%;
-    height: 100%;
+    height: 300px;
     border: none;
     
 }
-.iframe-container {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #map {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #map {
+        width: 100%;
+        height: 300px;
+
+    }
+ }
+
+.map-container {
     position: relative;
     width: 100%;
     overflow: hidden;
     padding-top: 62.5%; /* 8:5 Aspect Ratio */
   }
 
-.addr {
-    
+
+
+.iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 */
+    position: relative;
+} 
+  
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
+
+
+/* Image filters and Hero Images */
 .img-contrast {
     filter: contrast(125%) drop-shadow(8px 8px 10px gray);
 }
@@ -124,13 +151,6 @@
     color: white;
 }
 
-.center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-  }
-
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3-media0.fl.yelpcdn.com/bphoto/2PqMguOeCGYfMwhTOTr34g/o.jpg");
@@ -139,4 +159,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+
+
+
+/* Positioning */
+.center-div {
+    margin: auto;
+    width: 50%;
+    border: 3px solid transparent;
+    padding: 10px;
+}
+
+
+/* Icon Buttons */
+.lg {
+    width: 100%;
 }

@@ -10,7 +10,7 @@ const minLength = (len) => (val) => val && (val.length >= len);
 const isNumber = (val) => !isNaN(Number(val));
 const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
-function LocationInfoSection() {
+export function LocationInfoSection() {
   return(
           <div className="row row-content">
                 <div className="col-5 col-md-4">
@@ -36,7 +36,7 @@ function LocationInfoSection() {
   );
 
 }
-function ContactInfoSection() {
+export function ContactInfoSection() {
   return(
     <div className="row row-content">
                 <div className="col-4 col-md-4">

@@ -5,8 +5,6 @@ import { Breadcrumb, BreadcrumbItem, Card, CardImg, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Fade, Stagger } from 'react-animation-components';
 import { Loading } from './Loading.component';
-// eslint-disable-next-line
-import { baseUrl } from '../shared/baseUrl';
 
 function RenderLeader({leader, isLoading, errMess}) {
   if (isLoading) {
@@ -74,13 +72,13 @@ const About = (props) => {
                 <h2>Get in Touch</h2>
                 </div>
                 <div className='col-4'>
-                  <i className="fa fa-phone fa-5x"></i>
+                <a href="tel:+6305520200"><i className="fa fa-phone fa-5x"></i></a>
                 </div>
               <div className='col-4'>
-                <i className="fa fa-envelope-o fa-5x"></i>
+              <a href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope-o fa-5x"></i></a>
               </div>
               <div className='col-4'>
-                <i className="fa fa-map-marker fa-5x"></i>
+                <a href="https://goo.gl/maps/EVQeGkzXFMEHND9g7"><i className="fa fa-map-marker fa-5x"></i></a>
             </div>
             </div>
             <div className="row row-content">
@@ -88,15 +86,19 @@ const About = (props) => {
                 <h2>Location Information</h2>
                 </div>
                 <div className="col-12 col-sm-4 offset-sm-1">
+                  <Card>
+                    <CardImg
+                      alt="Tastee Bite Store"
+                      src="https://s3-media0.fl.yelpcdn.com/bphoto/2PqMguOeCGYfMwhTOTr34g/o.jpg"
+                    />
+                  </Card>
                         <h4>Our Address</h4>
-                        <i className="fa fa-map-marker"></i> 7000 Burroughs Ave,<br />
-                        Plano, Illinois. 60545<br />
-                        <i className="fa fa-phone"></i><a href="tel:+6305520200">: (630) 552 0200</a><br />
-                        <i className="fa fa-envelope"></i>: <a href="mailto:tasteebite@yahoo.com">tasteebite@yahoo.com</a>
+                        7000 Burroughs Ave,<br />
+                        Plano, Illinois. 60545
                 </div>
                 <div className="col-12 col-sm-6 offset-sm-1 mb-2">
                     <h4>Map of our Location</h4>
-                    <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47697.561023106675!2d-88.566049!3d41.653634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf310a31d074d580b!2sTastee%20Bite!5e0!3m2!1sen!2sus!4v1662395006091!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
                 </div>
             </div>
             <div className="row row-content">

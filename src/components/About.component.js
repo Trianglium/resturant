@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.component.css';
+// eslint-disable-next-line
 import { Breadcrumb, BreadcrumbItem, Card, CardImg, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Fade, Stagger } from 'react-animation-components';
@@ -69,20 +70,22 @@ const About = (props) => {
                 </div>
             </div>
             <div className="row row-content">
-                <div className="col-6 col-sm-4">
-                    <Card>
-                        <CardImg 
-                          alt="Tastee Bite Store"
-                          src="https://lh5.googleusercontent.com/p/AF1QipNB_5WqHMpeQKCjw4oHKfsjlNaEkXKcpYhkDaeJ=w408-h306-k-no"
-                          className='img-fluid img-contrast img-shadow'
-                        />
-                    </Card>
-                    <div className='mt-3'></div>
-                    <div id='addr' className='mt-3'>
-                      7000 Burroughs Ave,<br />
-                      Plano, Illinois. 60545<br />
-                    </div>
-                </div>
+            <div className="col-2">
+              <div className="list-group">
+                <a className="list-group-item" href="tel:+6305520200"><i className="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp; (630) 552 0200</a>
+                <a className="list-group-item" href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; tasteebite@yahoo.com</a>
+                <a className="list-group-item" href="#"><i className="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
+                <a className="list-group-item" href="#"><i className="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Settings</a>
+              </div>
+              </div>
+              <div className="col-4">
+              <div className="list-group">
+                <a className="list-group-item" href="tel:+6305520200"><i className="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp; (630) 552 0200</a>
+                <a className="list-group-item" href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; tasteebite@yahoo.com</a>
+                <a className="list-group-item" href="#"><i className="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
+                <a className="list-group-item" href="#"><i className="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Settings</a>
+              </div>
+              </div>
             </div>
             <div className="row row-content">
                 <div className="col-12 mb-4">
@@ -97,7 +100,7 @@ const About = (props) => {
                 </div>
                 <div className="col-12 col-sm-6 offset-sm-1 mb-2">
                     <h4>Map of our Location</h4>
-                    <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11924.39034833974!2d-88.5660488!3d41.6536335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf310a31d074d580b!2sTastee%20Bite!5e0!3m2!1sen!2sus!4v1662387571991!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11924.39034833974!2d-88.5660488!3d41.6536335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf310a31d074d580b!2sTastee%20Bite!5e0!3m2!1sen!2sus!4v1662387571991!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div className="row row-content">

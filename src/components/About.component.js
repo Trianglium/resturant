@@ -71,7 +71,6 @@ const About = (props) => {
             <div className="row row-content">
                 <div className="col-12 col-md-6">
                     <h2>Tastee Bite</h2>
-                    <p>Tacos are our specialty.</p>
                 </div>
                 <div className="col-12 col-md-5">
                     <Card>
@@ -84,6 +83,31 @@ const About = (props) => {
                   <h2>Testimonials</h2>
               </div>
               {leaders}
+            </div>
+            <div className="row row-content">
+                <div className="col-12">
+                <h3>Location Information</h3>
+                </div>
+                <div className="col-12 col-sm-4 offset-sm-1">
+                        <h5>Our Address</h5>
+                        <address>
+                        7000 Burroughs Ave,<br />
+                        Plano, Illinois. 60545<br />
+                        
+                        <i className="fa fa-phone"></i>: (630) 552 0200<br />
+                        
+                        <i className="fa fa-envelope"></i>: <a href="mailto:tasteebite@yahoo.com">tasteebite@yahoo.com</a>
+                        </address>
+                </div>
+                <div className="col-12 col-sm-6 offset-sm-1">
+                    <h5>Map of our Location</h5>
+                </div>
+                <div className="col-12 col-sm-11 offset-sm-1">
+                    <div className="btn-group" role="group">
+                        <a role="button" className="btn btn-primary" href="tel:+6305520200"><i className="fa fa-phone"></i> Call</a>
+                        <a role="button" className="btn btn-success" href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope-o"></i> Email</a>
+                    </div>
+                </div>
             </div>
         </div>
     );

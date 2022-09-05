@@ -51,12 +51,17 @@ import { slideData } from '../../shared/slides';
       if (current + 1 === index) classNames += ' slide--next';
   
       return /*#__PURE__*/(
+        <li onClick={this.handleSlideClick} onMouseMove={this.handleMouseMove} onMouseLeave={this.handleMouseLeave}></li>
         React.createElement("li", {
           ref: this.slide,
           className: classNames,
           onClick: this.handleSlideClick,
           onMouseMove: this.handleMouseMove,
           onMouseLeave: this.handleMouseLeave }, /*#__PURE__*/
+
+        <div className="slide__image-wrapper">
+          <img className="slide__image" alt="" src="" onLoad={this.imageLoaded}></img>
+        </div>
   
         React.createElement("div", { className: "slide__image-wrapper" }, /*#__PURE__*/
         React.createElement("img", {
@@ -175,10 +180,6 @@ import { slideData } from '../../shared/slides';
   
   
     }}
-  
-  
-  
-  ReactDOM.render( /*#__PURE__*/React.createElement(Slider, { heading: "Example Slider", slides: slideData }), document.getElementById('app'));
     
     
 export default Slider;

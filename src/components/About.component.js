@@ -64,6 +64,7 @@ const About = (props) => {
                     <BreadcrumbItem active>About</BreadcrumbItem>
                 </Breadcrumb>
                 <div className="col-12 mb-2">
+                  <div className='hero-image'></div>
                     <h3>About Us</h3>
                     <hr />
                 </div>

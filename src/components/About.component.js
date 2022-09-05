@@ -70,22 +70,18 @@ const About = (props) => {
                 </div>
             </div>
             <div className="row row-content">
-            <div className="col-2">
-              <div className="list-group">
-                <a className="list-group-item" href="tel:+6305520200"><i className="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp; (630) 552 0200</a>
-                <a className="list-group-item" href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; tasteebite@yahoo.com</a>
-                <a className="list-group-item" href="#"><i className="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
-                <a className="list-group-item" href="#"><i className="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Settings</a>
+            <div className="col-12 mb-4">
+                <h2>Get in Touch</h2>
+                </div>
+                <div className='col-4'>
+                  <i className="fa fa-phone fa-5x"></i>
+                </div>
+              <div className='col-4'>
+                <i className="fa fa-envelope-o fa-5x"></i>
               </div>
-              </div>
-              <div className="col-4">
-              <div className="list-group">
-                <a className="list-group-item" href="tel:+6305520200"><i className="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp; (630) 552 0200</a>
-                <a className="list-group-item" href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; tasteebite@yahoo.com</a>
-                <a className="list-group-item" href="#"><i className="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
-                <a className="list-group-item" href="#"><i className="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Settings</a>
-              </div>
-              </div>
+              <div className='col-4'>
+                <i className="fa fa-map-marker fa-5x"></i>
+            </div>
             </div>
             <div className="row row-content">
                 <div className="col-12 mb-4">
@@ -95,12 +91,12 @@ const About = (props) => {
                         <h4>Our Address</h4>
                         <i className="fa fa-map-marker"></i> 7000 Burroughs Ave,<br />
                         Plano, Illinois. 60545<br />
-                        <i className="fa fa-phone"></i>: (630) 552 0200<br />
+                        <i className="fa fa-phone"></i><a href="tel:+6305520200">: (630) 552 0200</a><br />
                         <i className="fa fa-envelope"></i>: <a href="mailto:tasteebite@yahoo.com">tasteebite@yahoo.com</a>
                 </div>
                 <div className="col-12 col-sm-6 offset-sm-1 mb-2">
                     <h4>Map of our Location</h4>
-                    <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11924.39034833974!2d-88.5660488!3d41.6536335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf310a31d074d580b!2sTastee%20Bite!5e0!3m2!1sen!2sus!4v1662387571991!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47697.561023106675!2d-88.566049!3d41.653634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf310a31d074d580b!2sTastee%20Bite!5e0!3m2!1sen!2sus!4v1662395006091!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div className="row row-content">

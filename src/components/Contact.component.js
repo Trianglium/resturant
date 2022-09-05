@@ -10,10 +10,11 @@ const minLength = (len) => (val) => val && (val.length >= len);
 const isNumber = (val) => !isNaN(Number(val));
 const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
-export function LocationInfoSection() {
+export function LocationInfo() {
   return(
-          <div className="row row-content">
+          <div className="row">
                 <div className="col-5 col-md-4">
+                  <a className='btn lg-h' href='https://maps.google.com/maps/dir//Tastee+Bite+7000+Burroughs+Ave+Plano,+IL+60545/@41.6536364,-88.5660377,12z/data=!4m5!4m4!1m0!1m2!1m1!1s0x880ec167f456f6b1:0xf310a31d074d580b'>
                 <div className="pt-4">
                 <i className="fa fa-map-marker fa-5x"></i>
                     
@@ -28,6 +29,7 @@ export function LocationInfoSection() {
                         </h5> 
                         </div>
                 </div>
+                </a>
                 </div>
                 <div className="col-7 col-md-8">
                     <iframe id="map" title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47697.561023106675!2d-88.566049!3d41.653634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf310a31d074d580b!2sTastee%20Bite!5e0!3m2!1sen!2sus!4v1662395006091!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -36,9 +38,9 @@ export function LocationInfoSection() {
   );
 
 }
-export function ContactInfoSection() {
+export function ContactInfo() {
   return(
-    <div className="row row-content">
+    <div className="row">
                 <div className="col-4 col-md-4">
                 <a className="btn lg" href="https://www.facebook.com/profile.php?id=100070229032911">
                 <div className="pt-4">
@@ -108,8 +110,8 @@ class Contact extends Component {
 
     return(
         <div className="container">
-          <LocationInfoSection />
-          <ContactInfoSection />
+          <LocationInfo />
+          <ContactInfo />
 
         </div>
     );

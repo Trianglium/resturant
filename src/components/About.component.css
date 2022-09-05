@@ -80,14 +80,13 @@
 
 #map {
     border: 0;
-}
-
-.img-shadow {
-    filter: drop-shadow(8px 8px 10px gray);
+    width: 100%;
+    min-width: 600px;
+    height: 100%;
 }
 
 .img-contrast {
-    filter: contrast(125%) drop-shadow(8px 8px 10px gray);;
+    filter: contrast(125%) drop-shadow(8px 8px 10px gray);
 }
 
 .addr {

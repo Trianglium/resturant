@@ -79,11 +79,22 @@
 
 
 #map {
-    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
-    min-width: 600px;
     height: 100%;
+    border: none;
+    
 }
+.iframe-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 62.5%; /* 8:5 Aspect Ratio */
+  }
 
 .addr {
     
@@ -111,4 +122,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }
+
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3-media0.fl.yelpcdn.com/bphoto/2PqMguOeCGYfMwhTOTr34g/o.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }

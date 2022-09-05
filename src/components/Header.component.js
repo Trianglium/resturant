@@ -54,9 +54,6 @@ class Header extends Component {
                                 <NavLink to="/menu" className="nav-link"><span className="fa fa-list fa-lg"></span> Menu</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/contact" className="nav-link"><span className="fa fa-address-card fa-lg"></span> Contact</NavLink>
-                            </NavItem>
-                            <NavItem>
                                 <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
                             </NavItem>
                             </Nav>

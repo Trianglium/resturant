@@ -85,10 +85,30 @@
     height: 100%;
 }
 
+.addr {
+    
+}
+
+
 .img-contrast {
     filter: contrast(125%) drop-shadow(8px 8px 10px gray);
 }
 
-.addr {
-    
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3-media0.fl.yelpcdn.com/bphoto/2PqMguOeCGYfMwhTOTr34g/o.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+  
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }

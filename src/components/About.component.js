@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.component.css';
-import { Breadcrumb, BreadcrumbItem, Card, CardHeader, Media } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, Card, CardImg, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Fade, Stagger } from 'react-animation-components';
 import { Loading } from './Loading.component';
@@ -69,13 +69,35 @@ const About = (props) => {
                 </div>
             </div>
             <div className="row row-content">
-                <div className="col-12 col-md-6">
-                    <h2>Tastee Bite</h2>
-                </div>
-                <div className="col-12 col-md-5">
+                <div className="col-6 col-sm-4">
                     <Card>
-                        <CardHeader className="bg-info text-white">Facts At a Glance</CardHeader>
+                        <CardImg 
+                          alt="Tastee Bite Store"
+                          src="https://lh5.googleusercontent.com/p/AF1QipNB_5WqHMpeQKCjw4oHKfsjlNaEkXKcpYhkDaeJ=w408-h306-k-no"
+                          className='img-fluid img-contrast img-shadow'
+                        />
                     </Card>
+                    <div className='mt-3'></div>
+                    <div id='addr' className='mt-3'>
+                      7000 Burroughs Ave,<br />
+                      Plano, Illinois. 60545<br />
+                    </div>
+                </div>
+            </div>
+            <div className="row row-content">
+                <div className="col-12 mb-4">
+                <h2>Location Information</h2>
+                </div>
+                <div className="col-12 col-sm-4 offset-sm-1">
+                        <h4>Our Address</h4>
+                        <i className="fa fa-map-marker"></i> 7000 Burroughs Ave,<br />
+                        Plano, Illinois. 60545<br />
+                        <i className="fa fa-phone"></i>: (630) 552 0200<br />
+                        <i className="fa fa-envelope"></i>: <a href="mailto:tasteebite@yahoo.com">tasteebite@yahoo.com</a>
+                </div>
+                <div className="col-12 col-sm-6 offset-sm-1 mb-2">
+                    <h4>Map of our Location</h4>
+                    <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11924.39034833974!2d-88.5660488!3d41.6536335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf310a31d074d580b!2sTastee%20Bite!5e0!3m2!1sen!2sus!4v1662387571991!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div className="row row-content">
@@ -83,31 +105,6 @@ const About = (props) => {
                   <h2>Testimonials</h2>
               </div>
               {leaders}
-            </div>
-            <div className="row row-content">
-                <div className="col-12">
-                <h3>Location Information</h3>
-                </div>
-                <div className="col-12 col-sm-4 offset-sm-1">
-                        <h5>Our Address</h5>
-                        <address>
-                        7000 Burroughs Ave,<br />
-                        Plano, Illinois. 60545<br />
-                        
-                        <i className="fa fa-phone"></i>: (630) 552 0200<br />
-                        
-                        <i className="fa fa-envelope"></i>: <a href="mailto:tasteebite@yahoo.com">tasteebite@yahoo.com</a>
-                        </address>
-                </div>
-                <div className="col-12 col-sm-6 offset-sm-1">
-                    <h5>Map of our Location</h5>
-                </div>
-                <div className="col-12 col-sm-11 offset-sm-1">
-                    <div className="btn-group" role="group">
-                        <a role="button" className="btn btn-primary" href="tel:+6305520200"><i className="fa fa-phone"></i> Call</a>
-                        <a role="button" className="btn btn-success" href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope-o"></i> Email</a>
-                    </div>
-                </div>
             </div>
         </div>
     );

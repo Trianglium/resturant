@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './About.component.css';
 import { Breadcrumb, BreadcrumbItem, Button, Label, Col, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Control, Form, Errors } from 'react-redux-form';
@@ -36,29 +37,23 @@ class Contact extends Component {
               </div>
           </div>
             <div className="row row-content">
-                <div className="col-12">
-                <h3>Location Information</h3>
+                <div className="col-12 col-md-3 pt-4">
+                <div className="pt-4 mt-2">
+                    <h2>Visit Us</h2>
                 </div>
-                <div className="col-12 col-sm-4 offset-sm-1">
-                        <h5>Our Address</h5>
-                        <address>
-                        7000 Burroughs Ave,<br />
-                        Plano, Illinois. 60545<br />
-                        
-                        <i className="fa fa-phone"></i>: (630) 552 0200<br />
-                        
-                        <i className="fa fa-envelope"></i>: <a href="mailto:tasteebite@yahoo.com">tasteebite@yahoo.com</a>
-                        </address>
+                    <div className="mt-2 pt-3">
+                        <h4>
+                        <small class="text-muted">
+                            7000 Burroughs Ave.<br />
+                            Plano, Illinois. 60545<br />
+                            </small>
+                        </h4> 
+                        </div>
                 </div>
-                <div className="col-12 col-sm-6 offset-sm-1">
-                    <h5>Map of our Location</h5>
+                <div className="col-12 col-md-7">
+                    <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47697.561023106675!2d-88.566049!3d41.653634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf310a31d074d580b!2sTastee%20Bite!5e0!3m2!1sen!2sus!4v1662395006091!5m2!1sen!2sus" width="900" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div className="col-12 col-sm-11 offset-sm-1">
-                    <div className="btn-group" role="group">
-                        <a role="button" className="btn btn-primary" href="tel:+6305520200"><i className="fa fa-phone"></i> Call</a>
-                        <a role="button" className="btn btn-success" href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope-o"></i> Email</a>
-                    </div>
-                </div>
+                
             </div>
 
         </div>

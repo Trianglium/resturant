@@ -78,3 +78,18 @@
  }
 
 
+#map {
+    border: 0;
+}
+
+.img-shadow {
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.img-contrast {
+    filter: contrast(125%) drop-shadow(8px 8px 10px gray);;
+}
+
+.addr {
+    
+}

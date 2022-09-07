@@ -14,6 +14,7 @@ export function LocationInfo() {
   return(
           <div className="row">
                 <div className="col-5 col-md-4">
+                  <h2>Location Information</h2>
                   <a className='btn lg-h' href='https://maps.google.com/maps/dir//Tastee+Bite+7000+Burroughs+Ave+Plano,+IL+60545/@41.6536364,-88.5660377,12z/data=!4m5!4m4!1m0!1m2!1m1!1s0x880ec167f456f6b1:0xf310a31d074d580b'>
                 <div className="pt-4">
                 <i className="fa fa-map-marker fa-5x"></i>

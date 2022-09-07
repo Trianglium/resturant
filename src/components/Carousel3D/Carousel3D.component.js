@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 import { Fade, Stagger } from 'react-animation-components';
 import { Loading } from '../Loading.component';
 // eslint-disable-next-line
-import { REVIEWS } from '../../shared/reviews';
+import { REVIEWS } from '../../shared/leaders';
 
-function RenderReviewSlides({review, isLoading, errMess}) {
+function RenderReviewSlides({leader, isLoading, errMess}) {
     if (isLoading) {
         return(
                 <Loading />
@@ -18,23 +18,22 @@ function RenderReviewSlides({review, isLoading, errMess}) {
                 <h4>{errMess}</h4>
         );
     }
-    else if (review != null) {
+    else if (leader != null) {
         return(
-  
-          <div key={review.id} className="item">
+          <div key={leader.id} className="carousel-3d">
             <Stagger in>
-              <Media tag="li" className="list-unstyled">
-                <Fade in>
-                  <div className="reviewer-quote-wrapper">
-                      <div className="reviewer-quote">
+              <div id="carousel">
+               <Fade in>
+                  <div className="leaderer-quote-wrapper">
+                      <div className="leaderer-quote">
                           <p className='lead'>
-                          {review.text}
+                          {leader.designation}
                           </p>
-                          <h4>&mdash; {review.user.name}<br /><em> {review.time_created}</em></h4>
+                          <h4>&mdash; {leader.user.name}</em></h4>
                       </div>
-                  </div>
-                </Fade>
-                </Media>
+                   </div>
+                 </Fade>
+              </div>
             </Stagger>
           </div>
         );
@@ -48,10 +47,10 @@ function RenderReviewSlides({review, isLoading, errMess}) {
   
 
 const Carousel3D = (props) => {
-    const reviews = props.reviews.reviews.map((review) => {
+    const leaders = props.leaders.leaders.map((leader) => {
         return (
-          <div className="col-12" key={review.id}>
-            <RenderReviewSlides review={review} isLoading={props.reviewsLoading} errMess={props.reviewsErrMess} />
+          <div className="col-12" key={leader.id}>
+            <RenderReviewSlides leader={leader} isLoading={props.leadersLoading} errMess={props.leadersErrMess} />
           </div>
         );
     });
@@ -61,7 +60,8 @@ const Carousel3D = (props) => {
               <div className="col-12 mb-2">
                   <h2>Testimonials</h2>
               </div>
-              {reviews}
+              
+              {leaders}
         </div>
     );
 }

@@ -77,7 +77,6 @@ const About = (props) => {
             </div>
             <div className="row mt-4">
                 <div className="col-12 mb-4">
-                <h2>Location Information</h2>
                 </div>
                 <LocationInfo />
             </div>

@@ -20,21 +20,16 @@ function RenderLeader({leader, isLoading, errMess}) {
   }
   else if (leader != null) {
       return(
-
-        <div key={leader.id} className="col-3 mt-5">
-          <Stagger in>
-            <Media tag="li" className="list-unstyled">
-              <Fade in>
-                <div className="reviewer-quote-wrapper">
-                    <div className="reviewer-quote">
-                        <p className='lead'>
-                        {leader.designation}
-                        </p>
-                        <h4>&mdash; {leader.name}<br /><em> {leader.designation}</em></h4>
-                    </div>
-                </div>
-              </Fade>
-              </Media>
+          <div key={leader.id} className="carousel-3d">
+            <Stagger in>
+              <div id="carousel">
+               <Fade in>
+                      <div className='item'>
+                        <p className='lead'>{leader.designation}</p>
+                        <h4>&mdash; <em>{leader.name}</em></h4>
+                      </div>
+                 </Fade>
+              </div>
           </Stagger>
         </div>
       );
@@ -63,26 +58,31 @@ const About = (props) => {
                     <BreadcrumbItem><Link to="/home" className="breadcrumb-link">Home</Link></BreadcrumbItem>
                     <BreadcrumbItem active>About</BreadcrumbItem>
                 </Breadcrumb>
+                </div>
+                <div className="row">
                 <div className="col-12 mb-2">
-                  <div className='hero-image'></div>
-                    <h3>About Us</h3>
+                  <div className='hero-image'>
+                  <div className='hero-text'>
+                  <h1>About Us</h1>
+                    </div>
+                  </div>
                     <hr />
                 </div>
             </div>
-            <div className="row">
+            <div className="row mt-4">
             <div className="col-12 mb-2">
                 <h2>Get in Touch</h2>
                 </div>
                 <ContactInfo />
             </div>
-            <div className="row">
+            <div className="row mt-4">
                 <div className="col-12 mb-4">
                 <h2>Location Information</h2>
                 </div>
                 <LocationInfo />
             </div>
-            <div className="row">
-              <div className="col-12 mb-2">
+            <div className="row mt-4">
+              <div className="col-12 mb-2 mt-2">
                   <h2>Testimonials</h2>
               </div>
               {leaders}

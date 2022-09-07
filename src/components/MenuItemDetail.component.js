@@ -88,7 +88,7 @@ const minLength = (len) => (val) => val && (val.length >= len);
                 <div className="row">
                     <Breadcrumb>
                         <BreadcrumbItem><Link to="/home" className="breadcrumb-link">Home</Link></BreadcrumbItem>
-                        <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
+                        <BreadcrumbItem><Link to="/menu" className="breadcrumb-link">Menu</Link></BreadcrumbItem>
                         <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
                     </Breadcrumb>
                     <div className="col-12 text-left">

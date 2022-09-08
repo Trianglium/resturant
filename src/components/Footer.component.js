@@ -1,30 +1,59 @@
 import React from 'react';
 
-function Footer(props) {
+function InfoFooter(props) {
     return(
-    <div className="footer mt-3">
         <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-12 align-self-center">
-                    <div className="text-center pt-2 mt-2">
-                        <a className="btn btn-social-icon" href="https://www.facebook.com/profile.php?id=100070229032911"><i className="fa fa-facebook"></i></a>
-                        <a className="btn btn-social-icon" href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope-o"></i></a>
-                        <a className="btn btn-social-icon" href="tel:+6305520200"><i className="fa fa-phone"></i></a>
-                        <a className="btn btn-social-icon" href="https://goo.gl/maps/Wbv4mqSTbU2YJaRTA"><i className="fa fa-map-marker"></i></a>
-                        <a className="btn btn-social-icon" href="https://www.yelp.com/biz/tastee-bite-plano"><i class="fa fa-yelp" aria-hidden="false"></i></a>
-                        <a className="btn btn-social-icon" href="mailto:tasteebite@yahoo.com"><i className="fa fa-paper-plane-o"></i></a>
-                        <a className="btn btn-social-icon" href="mailto:tasteebite@yahoo.com"><i className="fa fa-tripadvisor"></i></a>
-                    </div>
-                </div>
+        <div className="row-flex" id="contact">
+        <div className="flex-column-form">
+            <h3>
+            Contact
+            </h3>
+        <form className="media-centered">
+            <div className="form-group">
+                <p>
+                <a href="tel:16305520200"><i className="fa fa-phone"></i></a> 
+                630 552 0200
+                </p>
+                <p>
+                <a href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope-o"></i></a> 
+                tasteebite@yahoo.com
+                </p>
+                <input type="name" className="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter your name"/>
             </div>
-            <div className="row justify-content-center">
-                <div className="col-auto mt-4">
-                    <p>© Copyright 2022 | Admin</p>
-                </div>
+            <div className="form-group">
+                <input type="number" className="form-control" id="exampleInputphoneNumber1" placeholder="Enter your phone number"/>
             </div>
+            <button type="submit" className="btn btn-primary">Submit</button>
+        </form>
         </div>
-    </div>
+        <div className="opening-time">
+            <h3>
+            Hours
+            </h3>
+            <p>
+            <span>Monday:  10:00 AM — 9:00 PM</span>
+            <span>Tuesday:  10:00 AM — 9:00 PM</span>
+            <span>Wednesday:  10:00 AM — 9:00 PM</span>
+            <span>Thursday:  10:00 AM — 9:00 PM</span>
+            <span>Friday:  10:00 AM — 10:00 PM</span>
+            <span>Saturday:  10:00 AM — 10:00 PM</span>
+            <span>Sunday:  11:00 AM — 9:00 PM</span>
+            </p>
+        </div>
+        <div className="contact-adress">
+            <h3>
+            Location
+            </h3>
+            <p>
+            <span>7000 Burroughs Ave.</span>
+            <span>Plano, Illinois. 60545</span>
+            <iframe id="map" title="MapGetDirections" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47697.561023106675!2d-88.566049!3d41.653634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf310a31d074d580b!2sTastee%20Bite!5e0!3m2!1sen!2sus!4v1662395006091!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
+        </div>
+        </div>
+        </div>
     )
 }
 
-export default Footer;
+
+export default InfoFooter;

@@ -60,9 +60,10 @@ export function ContactInfo() {
               </div>
               
               <div className="col-4 col-md-4">
-                <a className="btn lg" href="tel:16305520200">
+                <a href="tel:16305520200">
                     <div className="pt-4">
-                    <i className="fa fa-phone fa-5x"></i>
+                    <a href="tel:16305520200"><i className="fa fa-phone"></i></a>
+                    <a href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope-o"></i></a>
                     </div>
                     <div className="col-12">
                         <div className="mt-2 pt-3">

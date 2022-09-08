@@ -1,5 +1,6 @@
 import React from 'react';
 import './Landing.component.css';
+import {itemSlides} from '../shared/foodSlides';
 
 function FlexNav(props) {
     return(

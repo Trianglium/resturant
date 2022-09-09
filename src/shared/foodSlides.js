@@ -1,30 +1,37 @@
-export const itemSlides = [
+export const items = [
     {
-        src: "../../public/assets/images/tacos-dinner-slide.jpg",
+        id: 1,
+        src: "images/tacos-dinner-slide.jpg",
         altText: "Taco Dinner",
     },
     {
-        src: "../../public/assets/images/chips-salsa-slide.jpg",
+        id: 2,
+        src: "images/chips-salsa-slide.jpg",
         altText: "Chips and Salsa",
     },
     {
-        src: "../../public/assets/images/salad-slide.jpg",
+        id: 3,
+        src: "images/salad-slide.jpg",
         altText: "Salad",
     },
     {
-        src: "../../public/assets/images/burger-slide.jpg",
+        id: 4,
+        src: "images/burgers-slide.jpg",
         altText: "Burger",
     },
     {
-        src: "../../public/assets/images/chicken-slide.jpg",
+        id: 5,
+        src: "images/chicken-slide.jpg",
         altText: "Chicken",
     },
     {
-        src: "../../public/assets/images/tacos-corn-slide.jpg",
+        id: 6,
+        src: "images/tacos-corn-slide.jpg",
         altText: "Corn Tacos",
     },
     {
-        src: "../../public/assets/images/tacos-plate-slide.jpg",
+        id: 7,
+        src: "images/tacos-plate-slide.jpg",
         altText: "Taco Plate",
     },
 ]

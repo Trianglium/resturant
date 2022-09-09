@@ -29,7 +29,7 @@
 
 .section-intro {
     height: 820px;
-    background-image: url('../../public/assets/images/brick-bg.jpg');
+    background-image: url('../../public/assets/images/brick-bg.png');
     background-size: cover;
     display: flex;
     flex-direction: column;

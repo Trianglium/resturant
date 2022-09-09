@@ -9,19 +9,17 @@ function InfoFooter(props) {
             Contact
             </h3>
         <form className="media-centered">
+        <p>
+                <a href="tel:16305520200"><i className="fa fa-phone"></i> 630 552 0200</a>
+                </p>
+                <p>
+                <a href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope-o"></i> tasteebite@yahoo.com</a>
+                </p>
             <div className="form-group">
-                <p>
-                <a href="tel:16305520200"><i className="fa fa-phone"></i></a> 
-                630 552 0200
-                </p>
-                <p>
-                <a href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope-o"></i></a> 
-                tasteebite@yahoo.com
-                </p>
-                <input type="name" className="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter your name"/>
+                <input type="text" className="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter your name"/>
             </div>
             <div className="form-group">
-                <input type="number" className="form-control" id="exampleInputphoneNumber1" placeholder="Enter your phone number"/>
+                <input type="text" className="form-control" id="exampleInputphoneNumber1" placeholder="Enter your phone number"/>
             </div>
             <button type="submit" className="btn btn-primary">Submit</button>
         </form>

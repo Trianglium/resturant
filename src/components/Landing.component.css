@@ -196,3 +196,7 @@ a.link-to-book:hover {
     }
 
 }
+
+.text-justify {
+    text-align: justify;
+}

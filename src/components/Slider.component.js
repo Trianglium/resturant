@@ -8,7 +8,7 @@ import {
 
 import {items} from '../shared/foodSlides';
 
-
+// eslint-disable-next-line
 function FoodCarouselFunc(props) {
     return(
         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
@@ -96,6 +96,7 @@ class FoodCarousel extends Component {
             onExiting={this.onExiting}
             onExited={this.onExited}
           >
+            <img src={item.src} alt={item.altText} className="img-slides"/>
           </CarouselItem>
         );
       });

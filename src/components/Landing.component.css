@@ -200,3 +200,24 @@ a.link-to-book:hover {
 .text-justify {
     text-align: justify;
 }
+
+
+
+#hours-of-operation > tbody > tr > td:first-child {
+    font-weight: bold;
+
+}
+#hours-of-operation > tbody > tr > td:nth-child(3) {
+    font-size: small;
+    text-align: center;
+
+}
+
+#hours-of-operation > tbody > tr > td:nth-child(2) {
+    font-size: smaller;
+    text-align: center;
+}
+#hours-of-operation > tbody > tr > td:nth-child(4) {
+    font-size: smaller;
+    text-align: center;
+}

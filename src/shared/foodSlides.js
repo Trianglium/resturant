@@ -1,5 +1,3 @@
-import burgerImg from './burgers-slide.jpg';
-
 export const items = [
     {
         id: 1,
@@ -18,7 +16,7 @@ export const items = [
     },
     {
         id: 4,
-        src: burgerImg,
+        src: "images/burgers-slide.jpg",
         altText: "Burger",
     },
     {

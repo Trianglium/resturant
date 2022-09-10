@@ -90,13 +90,13 @@ class FoodCarousel extends Component {
       const slides = items.map((item) => {
         return (
           <CarouselItem
-            className="custom-tag"
+            className=""
             tag="div"
             key={item.id}
             onExiting={this.onExiting}
             onExited={this.onExited}
           >
-            <img src={item.src} alt={item.altText} className="img-slides"/>
+            <img src={item.src} alt={item.altText} className="img-h-4"/>
           </CarouselItem>
         );
       });
@@ -107,7 +107,7 @@ class FoodCarousel extends Component {
             {
               `.custom-tag {
                   max-width: 100%;
-                  height: 500px;
+                  height: 700px;
                   background: black;
                 }`
             }

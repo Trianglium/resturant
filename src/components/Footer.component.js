@@ -51,43 +51,43 @@ function InfoFooter(props) {
                     <tr>
                         <td>Monday</td>
                         <td>10:30 AM</td>
-                        <td>to</td>
+                        <td>&#8212;</td>
                         <td>9:00 PM</td>
                     </tr>
                     <tr>
                         <td>Tuesday</td>
                         <td>10:30 AM</td>
-                        <td>to</td>
+                        <td>&#8212;</td>
                         <td>9:00 PM</td>
                     </tr>
                     <tr>
                         <td>Wednesday</td>
                         <td>10:30 AM</td>
-                        <td>to</td>
+                        <td>&#8212;</td>
                         <td>9:00 PM</td>
                     </tr>
                     <tr>
                         <td>Thursday</td>
                         <td>10:30 AM</td>
-                        <td>to</td>
+                        <td>&#8212;</td>
                         <td>9:00 PM</td>
                     </tr>
                     <tr>
                         <td>Friday</td>
                         <td>10:00 AM</td>
-                        <td>to</td>
+                        <td>&#8212;</td>
                         <td>10:00 PM</td>
                     </tr>
                     <tr>
                         <td>Saturday</td>
                         <td>10:00 AM</td>
-                        <td>to</td>
+                        <td>&#8212;</td>
                         <td>10:00 PM</td>
                     </tr>
                     <tr>
                         <td>Sunday</td>
                         <td>11:00 AM</td>
-                        <td>to</td>
+                        <td>&#8212;</td>
                         <td> 8:30 PM</td>
                     </tr>
                 </tbody>

@@ -44,50 +44,48 @@ function InfoFooter(props) {
             <h3 className='text-center'>
             Hours
             </h3>
-            <div  className="col"></div>
-            <div  className="col"></div>
             <table id="hours-of-operation" class="table table-borderless">
                 <tbody>
                     <tr>
                         <td>Monday</td>
                         <td>10:30 AM</td>
-                        <td>&#8212;</td>
+                        <td>&#8211;</td>
                         <td>9:00 PM</td>
                     </tr>
                     <tr>
                         <td>Tuesday</td>
                         <td>10:30 AM</td>
-                        <td>&#8212;</td>
+                        <td>&#8211;</td>
                         <td>9:00 PM</td>
                     </tr>
                     <tr>
                         <td>Wednesday</td>
                         <td>10:30 AM</td>
-                        <td>&#8212;</td>
+                        <td>&#8211;</td>
                         <td>9:00 PM</td>
                     </tr>
                     <tr>
                         <td>Thursday</td>
                         <td>10:30 AM</td>
-                        <td>&#8212;</td>
+                        <td>&#8211;</td>
                         <td>9:00 PM</td>
                     </tr>
                     <tr>
                         <td>Friday</td>
                         <td>10:00 AM</td>
-                        <td>&#8212;</td>
+                        <td>&#8211;</td>
                         <td>10:00 PM</td>
                     </tr>
                     <tr>
                         <td>Saturday</td>
                         <td>10:00 AM</td>
-                        <td>&#8212;</td>
+                        <td>&#8211;</td>
                         <td>10:00 PM</td>
                     </tr>
                     <tr>
                         <td>Sunday</td>
                         <td>11:00 AM</td>
-                        <td>&#8212;</td>
+                        <td>&#8211;</td>
                         <td> 8:30 PM</td>
                     </tr>
                 </tbody>
@@ -97,17 +95,20 @@ function InfoFooter(props) {
             <h3 className='text-center'>
             Location
             </h3>
-            <div className='card my-3'>
-                <div className='card-body'>
-                    <address>
-                        <strong>Tastee Bite</strong> <br />
+            <div className='card my-1 px-4'>
+                <div className='card-body p-4'>
+                    <address className="font-monospace lh-1 address-lines">
+                        <strong className=''>Tastee Bite</strong> <br />
                         7000 Burroughs Ave. <br />
-                        Plano, Illinois. 60545
+                        Plano, Illinois. <br />
+                        60545-7100
                     </address>
                 </div>
             </div>
-            
+            <div className='card my-3'>
             <iframe id="map" title="MapGetDirections" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47697.561023106675!2d-88.566049!3d41.653634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf310a31d074d580b!2sTastee%20Bite!5e0!3m2!1sen!2sus!4v1662395006091!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
             
         </div>
         </div>

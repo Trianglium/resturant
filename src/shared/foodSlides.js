@@ -21,17 +21,17 @@ export const items = [
     },
     {
         id: 5,
-        src: "assets/images/food/chicken-slide.jpg",
-        altText: "Chicken",
+        src: "assets/images/food/tacos-corn-slide.jpg",
+        altText: "Jarritos and Tacos",
     },
     {
         id: 6,
-        src: "assets/images/food/tacos-corn-slide.jpg",
-        altText: "Corn Tacos",
-    },
-    {
-        id: 7,
         src: "assets/images/food/tacos-plate-slide.jpg",
         altText: "Taco Plate",
     },
+    {
+        id: 7,
+        src: "assets/images/food/3-tacos-plate-slide.jpg",
+        altText: "3 Taco Dinner"
+    }
 ]

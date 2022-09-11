@@ -281,36 +281,13 @@ a.link-to-book:hover {
 
 
 /* Carousel Image and Slide sizing */
-.h-100 {
-    max-height:100vh;
+.image-slides {
+    vertical-align: middle;
+    display: inline-block;
 }
-
-img.img-slide {
-    max-width: 480px;
-    max-height: 720px;
-
-}
-img.img-h-4 {
-    max-height: 33%;
-}
-.slide-container {
-    width: 40%;
-    height: 60%;
-}
-
-.carousel-container {
-    width: 40%;
-    height: 60%;
-}
-/* Copy Address, Phone Number, Email Links (on hover)*/
-.copy-link {
-
-}
-
-.copy-link:hover {
-    
-}
-
-.btn-copy-link {
-
+.carousel-inner {
+    height: 700px;
+    max-height: max-content;
+    width: 480px;
+    max-width: max-content;
 }

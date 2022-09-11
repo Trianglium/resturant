@@ -57,7 +57,7 @@ class FoodCarousel extends Component {
             onExiting={this.onExiting}
             onExited={this.onExited}
           >
-            <img src={item.src} alt={item.altText} className="img-slides"/>
+            <img src={item.src} alt={item.altText} className="image-slides" width="640" height="100%"/>
           </CarouselItem>
         );
       });
@@ -73,6 +73,7 @@ class FoodCarousel extends Component {
                 }`
             }
           </style>
+          <div className='col-12 col-sm-8 offset-sm-2 '>
           <Carousel
             activeIndex={activeIndex}
             next={this.next}
@@ -83,6 +84,7 @@ class FoodCarousel extends Component {
             <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
             <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
           </Carousel>
+          </div>
         </div>
       );
     }

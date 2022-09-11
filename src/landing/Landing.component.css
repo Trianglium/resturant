@@ -34,7 +34,9 @@
 
 .section-intro {
     height: 820px;
-    background-image: url('../../public/assets/images/brick-bg.png');
+    background-image: url('../../public/assets/images/firework-bg.jpg');
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -281,13 +283,12 @@ a.link-to-book:hover {
 
 
 /* Carousel Image and Slide sizing */
-.image-slides {
-    vertical-align: middle;
-    display: inline-block;
+
+.copy-btn {
+    display: none;
 }
+
 .carousel-inner {
-    height: 700px;
-    max-height: max-content;
-    width: 480px;
-    max-width: max-content;
+    height: 100%;
+    width: 100%;
 }

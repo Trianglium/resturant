@@ -25,7 +25,7 @@ export function FlexNav(props) {
 export function ImageHeader(props) {
     return(
         <section className="section-intro">
-        <header>
+        <header className='section-intro-txt'>
           <h1>Tastee Bite</h1>
         </header>
         <div className="link-to-book-wrapper">

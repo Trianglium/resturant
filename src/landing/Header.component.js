@@ -9,10 +9,10 @@ export function FlexNav(props) {
                 <a href="#about">About</a>
             </li>
             <li className="nav-item">
-                <a href="#menu">Menu</a>
+                <a href="https://www.yelp.com/menu/tastee-bite-plano">Menu</a>
             </li>
             <li className="nav-item">
-                <a href="#partymenu"> Party Menu</a>
+                <a href="https://www.yelp.com/menu/tastee-bite-plano/party-menu"> Party Menu</a>
             </li>
             <li className="nav-item">
                 <a href="#contact">Contact</a>
@@ -25,7 +25,7 @@ export function FlexNav(props) {
 export function ImageHeader(props) {
     return(
         <section className="section-intro">
-        <header>
+        <header className='section-intro-txt'>
           <h1>Tastee Bite</h1>
         </header>
         <div className="link-to-book-wrapper">

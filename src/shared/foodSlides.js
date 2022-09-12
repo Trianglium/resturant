@@ -6,32 +6,22 @@ export const items = [
     },
     {
         id: 2,
-        src: "assets/images/food/chips-salsa-slide.jpg",
-        altText: "Chips and Salsa",
-    },
-    {
-        id: 3,
         src: "assets/images/food/salad-slide.jpg",
         altText: "Salad",
     },
     {
-        id: 4,
+        id: 3,
         src: "assets/images/food/burgers-slide.jpg",
         altText: "Burger",
     },
     {
-        id: 5,
-        src: "assets/images/food/chicken-slide.jpg",
-        altText: "Chicken",
-    },
-    {
-        id: 6,
+        id: 4,
         src: "assets/images/food/tacos-corn-slide.jpg",
-        altText: "Corn Tacos",
+        altText: "Jarritos and Tacos",
     },
     {
-        id: 7,
-        src: "assets/images/food/tacos-plate-slide.jpg",
-        altText: "Taco Plate",
-    },
+        id: 5,
+        src: "assets/images/food/3-tacos-plate-slide.jpg",
+        altText: "3 Taco Dinner"
+    }
 ]

@@ -2,21 +2,25 @@ import React from 'react';
 
 function AboutSection(props) {
     return(
-        <section className="about-section" id="about">
-        <article className="pe-4">
-          <h3>
-              The best tacos in town
-          </h3>
-          <p>
-            We take pride in being the go-to taco place while also offering other high quality food options for low prices.
+        <section className="about-section text-center row" id="about">
+        <article className="pe-4 col">
+          <p className="about-h">
+              Gyros
           </p>
         </article>
-        <article className="pe-4">
-          <h3>
-              The best tacos in town
-          </h3>
-          <p>
-            We take pride in being the go-to taco place while also offering other high quality food options for low prices.
+        <article className="pe-4 col">
+          <p className="about-h">
+              Beef
+          </p>
+        </article>
+        <article className="pe-4 col">
+          <p className="about-h">
+              Burgers
+          </p>
+        </article>
+        <article className="pe-4 col">
+          <p className="about-h">
+              Tacos
           </p>
         </article>
       </section>

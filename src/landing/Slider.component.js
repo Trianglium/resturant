@@ -57,7 +57,7 @@ class FoodCarousel extends Component {
             onExiting={this.onExiting}
             onExited={this.onExited}
           >
-            <img src={item.src} alt={item.altText} className="image-slides" width="640" height="100%"/>
+            <img src={item.src} alt={item.altText} height="100%" width="100%"/>
           </CarouselItem>
         );
       });
@@ -68,12 +68,12 @@ class FoodCarousel extends Component {
             {
               `.custom-tag {
                   max-width: 100%;
-                  height: 700px;
+                  height: 100%;
                   background: black;
                 }`
             }
           </style>
-          <div className='col-12 col-sm-8 offset-sm-2 '>
+          <div className='col-12 col-sm-8 offset-sm-2 mt-4 mb-4'>
           <Carousel
             activeIndex={activeIndex}
             next={this.next}

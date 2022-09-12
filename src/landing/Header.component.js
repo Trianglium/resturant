@@ -9,10 +9,10 @@ export function FlexNav(props) {
                 <a href="#about">About</a>
             </li>
             <li className="nav-item">
-                <a href="#menu">Menu</a>
+                <a href="https://www.yelp.com/menu/tastee-bite-plano">Menu</a>
             </li>
             <li className="nav-item">
-                <a href="#partymenu"> Party Menu</a>
+                <a href="https://www.yelp.com/menu/tastee-bite-plano/party-menu"> Party Menu</a>
             </li>
             <li className="nav-item">
                 <a href="#contact">Contact</a>

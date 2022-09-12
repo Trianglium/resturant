@@ -4,24 +4,24 @@ function AboutSection(props) {
     return(
         <section className="about-section text-center row" id="about">
         <article className="pe-4 col">
-          <h3 className="about-h display-1">
+          <p className="about-h">
               Gyros
-          </h3>
+          </p>
         </article>
         <article className="pe-4 col">
-          <h3 className="about-h display-1">
+          <p className="about-h">
               Beef
-          </h3>
+          </p>
         </article>
         <article className="pe-4 col">
-          <h3 className="about-h display-1">
+          <p className="about-h">
               Burgers
-          </h3>
+          </p>
         </article>
         <article className="pe-4 col">
-          <h3 className="about-h display-1">
+          <p className="about-h">
               Tacos
-          </h3>
+          </p>
         </article>
       </section>
     )

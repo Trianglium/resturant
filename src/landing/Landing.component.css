@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Caveat+Brush&family=Economica&family=Sriracha&family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Bebas+Neue&family=Kaushan+Script&display=swap');
 
+
+/* Font Families */
 .carter-one-font {
   font-family: 'Carter One', cursive;
 }
@@ -51,7 +53,7 @@
 }
 
 .nav-flex-row li a {
-    font-family: 'Big Shoulders Text', cursive;
+    font-family: 'Alatsi', sans-serif;
     color: #ffffff;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -134,9 +136,13 @@ a.link-to-book:hover {
     flex: 1;
     margin: 30px 20px;
 }
-
+.btn {
+    font-family: 'Alatsi', sans-serif;
+    text-transform: uppercase;
+}
 .btn.btn-primary {
-    font-family: 'Big Shoulders Text', cursive;
+    font-family: 'Alatsi', sans-serif;
+    text-transform: uppercase;
     color: #ffffff;
     background-color: #95999e;
     text-transform: uppercase;
@@ -303,7 +309,7 @@ a.link-to-book:hover {
 /* About Section Headers */
 .about-h {
     text-transform: uppercase;
-    color:rgba(255, 0, 0, 1);
+    font-family: 'Alatsi', sans-serif;
     font-weight: bold;
 }
 

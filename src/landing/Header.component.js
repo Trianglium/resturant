@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../logo';
 
 
 export function FlexNav(props) {
@@ -26,7 +27,7 @@ export function ImageHeader(props) {
     return(
         <section className="section-intro">
         <header className='section-intro-txt'>
-          <h1>Tastee Bite</h1>
+          <Logo />
         </header>
         <div className="link-to-book-wrapper">
           <a className="link-to-book" href="#reservations">Menu</a>

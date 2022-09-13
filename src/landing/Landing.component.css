@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Caveat+Brush&family=Economica&family=Sriracha&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Bebas+Neue&family=Kaushan+Script&display=swap');
 
 .carter-one-font {
   font-family: 'Carter One', cursive;
@@ -20,8 +21,15 @@
 .big-shoulders-font {
     font-family: 'Big Shoulders Text', cursive;
 }
-/* font-family: 'Big Shoulders Text', cursive; */
-
+.alatsi-font {
+    font-family: 'Alatsi', sans-serif;
+}
+.bebas-neue-font {
+    font-family: 'Bebas Neue', cursive;
+}
+.kaushan-script-font {
+    font-family: 'Kaushan Script', cursive;
+}
 
 /* Navigation */
 

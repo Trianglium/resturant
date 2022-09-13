@@ -1,4 +1,5 @@
 import React from 'react';
+import './Menu.component';
 
 function MenuItem(props) {
     return(

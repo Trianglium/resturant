@@ -1,9 +1,11 @@
 import React from 'react';
+import './Landing.component.css';
+import Logo from '../logo';
 
 
 export function FlexNav(props) {
     return(
-        <nav>
+        <nav className='sticky'>
             <ul className="nav-flex-row">
             <li className="nav-item">
                 <a href="#about">About</a>
@@ -26,10 +28,10 @@ export function ImageHeader(props) {
     return(
         <section className="section-intro">
         <header className='section-intro-txt'>
-          <h1>Tastee Bite</h1>
+          <Logo />
         </header>
         <div className="link-to-book-wrapper">
-          <a className="link-to-book" href="#reservations">Menu</a>
+          <a className="btn btn-outline-light" role="button" href="tel:+16305520200"><strong>Order now</strong></a>
         </div>
       </section>
     )

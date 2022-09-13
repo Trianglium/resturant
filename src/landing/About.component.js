@@ -1,4 +1,5 @@
 import React from 'react';
+import './Landing.component.css';
 
 function AboutSection(props) {
     return(

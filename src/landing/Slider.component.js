@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Landing.component.css';
 import {
   Carousel,
   CarouselItem,

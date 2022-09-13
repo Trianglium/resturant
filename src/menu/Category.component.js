@@ -1,4 +1,5 @@
 import React from 'react';
+import './Menu.component';
 import {CATEGORIES} from '../shared/menuCategories.js';
 
 function MenuCategory(props) {

@@ -1,5 +1,7 @@
 import React from 'react';
+// eslint-disable-next-line
 import ReactDOM from 'react-dom';
+// eslint-disable-next-line
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 
@@ -14,25 +16,25 @@ export function ContactSection(props) {
             </h3>
             <div className="flex-column-form">
             <div class='card-borderless mb-4'>
-                <span className="lh-2 address-lines">
-                    <strong className=''><a href="tel:16305520200"><i className="fa fa-phone"></i></a>&nbsp; 630 552 0200 <br />
-                    <a href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope-o"></i></a>&nbsp; tasteebite@yahoo.com</strong>
+                <span className="lh-2 address-lines ws-no-wrap">
+                    <strong className=''><a href="tel:16305520200"><i className="fa fa-phone"></i></a>&nbsp;&nbsp;630 552 0200 <br />
+                    <a href="mailto:tasteebite@yahoo.com"><i className="fa fa-envelope-o"></i></a>&nbsp;&nbsp;tasteebite@yahoo.com</strong>
                 </span>
             </div>
 
             <div class="card-borderless">
-            <div className="form-group mb-3">
-                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3">Enter message</textarea>
-            </div>
             <div className="form-grou mb-3">
-                <input type="text" className="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter your name"/>
+                <input type="text" className="form-control" id="feedbackName" aria-describedby="name field" placeholder="Full Name"/>
             </div>
             <div className="form-group mb-3">
-                <input type="text" className="form-control" id="exampleInputphoneNumber1" placeholder="Enter your phone number"/>
+                <input type="text" className="form-control" id="feedbackEmail" aria-describedby="phone number field" placeholder="Email Address"/>
             </div>
+            <div className="form-group mb-3">
+                <textarea className="form-control" id="feedbackMessage" rows="4" placeholder="Message"></textarea>
+            </div>
+            
             <div className="form-group mb-3 text-center">
                 <button type="submit" className="btn btn-outline-success mx-3">Submit</button>
-                <button type="button" className="btn btn-outline-secondary mx-3">Cancel</button>
             </div>
             </div>
             </div>
@@ -51,7 +53,7 @@ function InfoFooter(props) {
             <h3 className='text-center'>
             Hours
             </h3>
-            <table id="hours-of-operation" class="table table-borderless">
+            <table id="hours-of-operation" class="table table-borderless ws-no-wrap">
                 <tbody>
                     <tr>
                         <td>Monday</td>

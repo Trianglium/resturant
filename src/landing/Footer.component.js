@@ -34,7 +34,7 @@ export function ContactSection(props) {
             </div>
             
             <div className="form-group mb-3 text-center">
-                <button type="submit" className="btn btn-outline-success mx-3">Submit</button>
+                <button type="submit" className="btn btn-outline-success mx-3"><strong>Send</strong></button>
             </div>
             </div>
             </div>

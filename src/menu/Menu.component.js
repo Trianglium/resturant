@@ -4,12 +4,19 @@ import './Menu.component.css';
 function Menu(props) {
     return(
         <section className="menu" id="menu">
-        <article className="pe-4">
-
-        </article>
-        <article className="pe-4">
-
-        </article>
+          <div>
+            <h1>
+                Menu
+            </h1>
+            <ul>
+                <li>
+                  <strong>Full Menu</strong>
+                </li>
+                <li>
+                  Party Menu
+                </li>
+            </ul>
+         </div>
       </section>
     )
 }

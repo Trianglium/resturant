@@ -27,7 +27,7 @@ export function ContactSection(props) {
                 <input type="text" className="form-control" id="feedbackName" aria-describedby="name field" placeholder="Full Name"/>
             </div>
             <div className="form-group mb-3">
-                <input type="text" className="form-control" id="feedbackEmail" aria-described="phone number field" placeholder="Email Address"/>
+                <input type="text" className="form-control" id="feedbackEmail" aria-describedby="phone number field" placeholder="Email Address"/>
             </div>
             <div className="form-group mb-3">
                 <textarea className="form-control" id="feedbackMessage" rows="4" placeholder="Message"></textarea>

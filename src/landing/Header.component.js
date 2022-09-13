@@ -3,7 +3,7 @@ import React from 'react';
 
 export function FlexNav(props) {
     return(
-        <nav>
+        <nav className='sticky'>
             <ul className="nav-flex-row">
             <li className="nav-item">
                 <a href="#about">About</a>

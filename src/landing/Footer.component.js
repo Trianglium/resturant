@@ -23,15 +23,16 @@ export function ContactSection(props) {
             </div>
 
             <div class="card-borderless">
-            <div className="form-group mb-3">
-                <textarea className="form-control" id="feedbackMessage" rows="4" placeholder="Message"></textarea>
-            </div>
             <div className="form-grou mb-3">
                 <input type="text" className="form-control" id="feedbackName" aria-describedby="name field" placeholder="Full Name"/>
             </div>
             <div className="form-group mb-3">
                 <input type="text" className="form-control" id="feedbackEmail" aria-described="phone number field" placeholder="Email Address"/>
             </div>
+            <div className="form-group mb-3">
+                <textarea className="form-control" id="feedbackMessage" rows="4" placeholder="Message"></textarea>
+            </div>
+            
             <div className="form-group mb-3 text-center">
                 <button type="submit" className="btn btn-outline-success mx-3">Submit</button>
             </div>

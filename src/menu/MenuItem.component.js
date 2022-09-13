@@ -1,5 +1,5 @@
 import React from 'react';
-import './Menu.component';
+import './Menu.component.css';
 
 
 
@@ -7,7 +7,7 @@ import './Menu.component';
 
 function MenuItem(props) {
     return(
-        <section className="menu-items" id="menu-items-detail">
+        <section id="menu-items-detail">
           <div className="menu-category-section">
               <h2 className="category-name">
                 Salads

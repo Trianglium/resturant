@@ -41,3 +41,33 @@
 .kaushan-script-font {
     font-family: 'Kaushan Script', cursive;
 }
+
+
+/* Spacing */
+.ws-no-wrap {
+  white-space: nowrap;
+}
+
+
+
+
+/* Responsive SVG and SVG Container */
+.svg-container {
+  width: 100%;
+  height: 100%;
+  resize: both;
+  overflow: auto;
+}
+
+svg {
+  width: 95%;
+  height: 95%;
+}
+
+
+/* Sticky Positioning  */
+.sticky {
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+}

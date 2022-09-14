@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Landing from './landing/Landing.component';
+import Main from './core/Main.component';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Landing/>
+        <Main />
       </div>
     );
   }

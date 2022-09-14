@@ -3,7 +3,17 @@ import '../landing/Landing.component.css';
 import {Link } from "react-router-dom";
 
 export const FlexNav = () => {
-   
+    const [colorChange, setColorchange] = useState(false);
+
+    const changeNavbarColor = () =>{
+        if(window.scrollY >= 80){
+          setColorchange(true);
+        }
+        else{
+          setColorchange(false);
+        }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
     return(
         <nav className='sticky'>
             <ul className="nav-flex-row">

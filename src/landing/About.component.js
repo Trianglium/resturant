@@ -1,6 +1,16 @@
 import React from 'react';
 import './Landing.component.css';
 
+export const AboutAmenities = () => {
+  return(
+    <article className="pe-4 col">
+          <p className="about-h">
+              Gyros
+          </p>
+    </article>
+  )
+}
+
 function AboutSection(props) {
     return(
         <section className="about-section text-center row" id="about">

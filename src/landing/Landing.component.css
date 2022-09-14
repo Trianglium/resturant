@@ -1,7 +1,11 @@
 @import '../core/core.css';
 
 /* Navigation */
-
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 .nav-flex-row {
     display: flex;
     flex-direction: row;
@@ -26,6 +30,18 @@
     text-transform: uppercase;
     font-weight: 300;
 }
+
+/* Color Change on Scroll */
+.navbar{
+    background-color: transparent;
+}
+  
+.navbar.colorChange{
+    background-color: rgba(0,0,0,0.7);
+}
+
+
+
 
 /* Header Image */
 

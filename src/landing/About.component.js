@@ -1,9 +1,10 @@
 import React from 'react';
 import './Landing.component.css';
+import ReviewSection from './Reviews.component'
 
 export const AboutAmenities = () => {
   return(
-    <article className="pe-4 col">
+    <article className="pe-4 col-6">
           <p className="about-h">
               Gyros
           </p>
@@ -13,28 +14,9 @@ export const AboutAmenities = () => {
 
 function AboutSection(props) {
     return(
-        <section className="about-section text-center row" id="about">
-        <article className="pe-4 col">
-          <p className="about-h">
-              Gyros
-          </p>
-        </article>
-        <article className="pe-4 col">
-          <p className="about-h">
-              Beef
-          </p>
-        </article>
-        <article className="pe-4 col">
-          <p className="about-h">
-              Burgers
-          </p>
-        </article>
-        <article className="pe-4 col">
-          <p className="about-h">
-              Tacos
-          </p>
-        </article>
-      </section>
+        <div id="about">
+          <ReviewSection />
+      </div>
     )
 }
 

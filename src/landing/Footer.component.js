@@ -98,12 +98,8 @@ export function ContactSection(props) {
     );
 }
 
-function InfoFooter(props) {
+export function LocationSection(props) {
     return(
-        <div className="container">
-            <div className="row-flex" id="contact">
-                <ContactSection />
-                <HoursSection />
         <div className="contact-adress">
             <h3 className='text-center'>
             Location
@@ -119,11 +115,17 @@ function InfoFooter(props) {
                 </div>
                 <iframe id="map" title="MapGetDirections" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47697.561023106675!2d-88.566049!3d41.653634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf310a31d074d580b!2sTastee%20Bite!5e0!3m2!1sen!2sus!4v1662395006091!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            
-            
-            
-            
         </div>
+    );
+}
+
+function InfoFooter(props) {
+    return(
+        <div className="container">
+            <div className="row-flex" id="contact">
+                <ContactSection />
+                <HoursSection />
+                <LocationSection />
         </div>
         </div>
     )

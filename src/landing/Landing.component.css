@@ -2,8 +2,6 @@
 
 /* Navigation */
 nav {
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
 }
 .nav-flex-row {
@@ -221,6 +219,10 @@ a.link-to-book:hover {
     }
 
     #hours-of-operation > tbody > tr > td {
+        font-size: smaller;
+    }
+
+    .nav-flex-row li a {
         font-size: smaller;
     }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Landing.component.css';
-import { ImageHeader } from './Header.component';
-import InfoFooter from './Footer.component';
+import { ImageHeader } from '../core/Header.component';
+import InfoSection from '../info/Info.component';
 import AboutSection from './About.component';
 import FoodCarousel from './Slider.component';
 
@@ -10,8 +10,9 @@ function Landing(props) {
         <div className="fluid-container">
             <ImageHeader />
             <AboutSection />
+            <AboutSection />
             <FoodCarousel />
-            <InfoFooter />
+            <InfoSection />
       </div>
     )
 

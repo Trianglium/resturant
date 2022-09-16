@@ -1,6 +1,6 @@
 export const yelpReviews = [
     {
-        feedback: "The food here is always amazing no matter what you order.",
+        feedback: "Always amazing no matter what you order.",
         name: "Adam W."
     },
     {
@@ -14,9 +14,5 @@ export const yelpReviews = [
     {
         feedback: "Great place for lunch or a quick bite to eat.",
         name: "Brett B."
-    },
-    {
-        feedback: "This is our #1 lunch spot for work.",
-        name: "Jessica J."
     }
 ];

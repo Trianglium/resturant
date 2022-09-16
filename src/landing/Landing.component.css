@@ -111,11 +111,11 @@ a.link-to-book:hover {
     font-size: 1em;
     text-transform: uppercase;
 }
+.about-section p.muted:nth-child(2)::first-letter {
+    color: #000;
+}
 .about-section p.muted:nth-child(2) {
     color: rgb(201, 37, 37);
-}
-.about-section article:nth-child(3) p.muted:nth-child(2) {
-    color: #ab8e57;
 }
 .text-yellow {
     color: #E3B664;

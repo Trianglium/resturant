@@ -346,6 +346,13 @@ svg {
 	top: 0;
 }
 
+
+
+/* Copy Address to Clipboard Button on Hover 
+    * https://stackoverflow.com/a/34459870/17597213
+    * https://fontawesome.com/v4/icon/files-o
+*/
+
 .card-body-borderless i{
     visibility: hidden;
 }

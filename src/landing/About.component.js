@@ -14,7 +14,7 @@ export const AboutAmenities = () => {
 
 function AboutSection(props) {
     return(
-        <div id="about">
+        <div id="about-section">
           <ReviewSection />
       </div>
     )

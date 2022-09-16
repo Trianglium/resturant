@@ -15,7 +15,7 @@ export const FlexNav = () => {
             <nav>
                 <ul className="nav-flex-row">
                     <li className="nav-item">
-                        <Link to="/" hash="#about">About</Link>
+                        <a href="#about-section">About</a>
                     </li>
                     <li className="nav-item">
                         <Link to="/menu">Menu</Link>

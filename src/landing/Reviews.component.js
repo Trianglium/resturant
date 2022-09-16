@@ -5,13 +5,13 @@ import { yelpReviews } from '../shared/reviews';
 export const ReviewQuote = ({feedback, name}) => {
     if (!feedback) {
         return(
-            <article className="pe-4 col"></article>
+            <article className="col-12 col-sm-6"></article>
         );
     }
     
     else {
         return(
-            <article className="pe-4 col">
+            <article className="col-12 col-sm-6 col-md-3 pb-4">
                 <p className="about-h">
                 <i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;
                 <span className='p-2'>{feedback}</span>&nbsp;<i class="fa fa-quote-right" aria-hidden="true"></i>

@@ -345,3 +345,15 @@ svg {
 	position: sticky;
 	top: 0;
 }
+
+.card-body-borderless i{
+    visibility: hidden;
+}
+
+
+.card-body-borderless:hover {
+    background-color: #e9ecef;
+}
+.card-body-borderless:hover i{
+    visibility: visible;
+}

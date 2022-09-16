@@ -99,12 +99,24 @@ a.link-to-book:hover {
 .about-section p,
 .about-section h3 {
     text-align: center;
-    width: 60%;
+    width: 80%;
     margin: auto;
-    font-size: 1.8em;
+    font-size: 1.2em;
     text-transform: uppercase;
 }
-
+.about-section p.muted {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.text-red {
+    color: rgb(201, 37, 37);
+}
+.text-yellow {
+    color: #E3B664;
+}
 .carousel-inner {
     height: 700px;
 }
@@ -155,6 +167,16 @@ a.link-to-book:hover {
     display: block;
 }
 
+
+.reviews-h {
+    text-transform: uppercase;
+    font-family: 'Alatsi', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.7em;
+}
+
 @media (min-width:577px) and (max-width: 800px) {
 
     .section-intro {
@@ -163,7 +185,7 @@ a.link-to-book:hover {
 
     .about-section p,
     .about-section h3 {
-        font-size: 20px;
+        font-size: 1.3em;
     }
 
     .carousel-inner {
@@ -191,7 +213,7 @@ a.link-to-book:hover {
 
     .about-section p,
     .about-section h3 {
-        font-size: 15px;
+        font-size: 1em;
     }
 
     .carousel-inner {
@@ -364,3 +386,6 @@ svg {
 .card-body-borderless:hover i{
     visibility: visible;
 }
+
+
+

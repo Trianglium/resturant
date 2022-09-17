@@ -180,7 +180,15 @@ a.link-to-book:hover {
     font-size: 1.7em;
 }
 
-@media (min-width:577px) and (max-width: 800px) {
+
+@media (min-width:701px)  {
+    .row-flex {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width:577px) and (max-width: 700px) {
 
     .section-intro {
         height: 500px;
@@ -197,7 +205,7 @@ a.link-to-book:hover {
 
     .row-flex {
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
     }
 }
 

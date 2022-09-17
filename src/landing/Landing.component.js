@@ -10,7 +10,6 @@ function Landing(props) {
         <div className="fluid-container">
             <ImageHeader />
             <AboutSection />
-            <AboutSection />
             <FoodCarousel />
             <InfoSection />
       </div>

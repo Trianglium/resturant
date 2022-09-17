@@ -2,9 +2,9 @@ import React from 'react';
 import './Landing.component.css';
 import ReviewSection from './Reviews.component'
 
-export const AboutAmenities = () => {
+export const Amenities = () => {
   return(
-    <article className="pe-4 col-6">
+    <article className="col 6">
           <p className="about-h">
               Gyros
           </p>

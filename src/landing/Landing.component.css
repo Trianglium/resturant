@@ -388,9 +388,12 @@ svg {
 
 .card-body-borderless i{
     visibility: hidden;
+    color: var(--bs-link-color);
 }
 
-
+.card-body-borderless i:hover{
+    color: var(--bs-link-hover-color);
+}
 .card-body-borderless:hover {
     background-color: #e9ecef;
 }
@@ -400,3 +403,6 @@ svg {
 
 
 
+strong.contact-method {
+    font-size: 1em;
+}

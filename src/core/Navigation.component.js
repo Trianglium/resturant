@@ -1,14 +1,6 @@
 import React from 'react'
 import '../landing/Landing.component.css';
-
-import Landing from '../landing/Landing.component';
-import Menu from '../menu/Menu.component';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 export const FlexNav = () => {
     return(
@@ -18,10 +10,10 @@ export const FlexNav = () => {
                         <a href="#about-section">About</a>
                     </li>
                     <li className="nav-item">
-                        <Link to="/menu">Menu</Link>
+                        <NavLink to="/menu">Menu</NavLink>
                     </li>
                     <li className="nav-item">
-                    <a href="#party-menu">Party Menu</a>
+                    <NavLink to="/party-menu">Party Menu</NavLink>
                     </li>
                     <li className="nav-item">
                         <a href="#contact">Contact</a>

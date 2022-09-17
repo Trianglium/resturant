@@ -10,7 +10,7 @@ export function ImageHeader(props) {
           <Logo />
         </header>
         <div className="link-to-book-wrapper">
-          <a className="btn btn-outline-light" role="button" href="tel:+16305520200"><strong>Order now</strong></a>
+          <a className="btn btn-outline-light" role="button" href="tel:+16305520200"><strong>Call now</strong></a>
         </div>
       </section>
     )

@@ -6,7 +6,7 @@ export const Amenities = () => {
   return(
     <article className="col 6">
           <p className="about-h">
-              Gyros
+             
           </p>
     </article>
   )

@@ -3,7 +3,7 @@ import React from 'react';
 function HoursSection() {
     return(
         <div className="opening-time">
-            <h3 className='text-center'>
+            <h3 className='text-center about-h'>
             Hours
             </h3>
             <table id="hours-of-operation" class="table table-borderless ws-no-wrap">

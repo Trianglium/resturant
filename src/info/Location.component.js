@@ -5,7 +5,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 function LocationSection(props) {
     return(
         <div className="contact-adress">
-            <h3 className='text-center'>
+            <h3 className='text-center about-h'>
             Location
             </h3>
             <div className='card-borderless my-1 px-4'>

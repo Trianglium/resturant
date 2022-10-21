@@ -6,7 +6,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 function ContactSection(props) {
     return(
         <div className="flex-column-form">
-            <h3 className='text-center'>
+            <h3 className='text-center about-h'>
             Contact
             </h3>
             <div className="flex-column-form">

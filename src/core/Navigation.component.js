@@ -10,10 +10,10 @@ export const FlexNav = () => {
                         <a href="#about-section">About</a>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/menu">Menu</NavLink>
+                        <NavLink to="#menu">Menu</NavLink>
                     </li>
                     <li className="nav-item">
-                    <NavLink to="/party-menu">Party Menu</NavLink>
+                    <NavLink to="#party-menu">Party Menu</NavLink>
                     </li>
                     <li className="nav-item">
                         <a href="#contact">Contact</a>

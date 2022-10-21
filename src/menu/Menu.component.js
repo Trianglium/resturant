@@ -1,24 +1,21 @@
 import React from 'react';
-import './Menu.component.css';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+
+
 
 function Menu(props) {
     return(
-        <section className="menu" id="menu">
-          <div>
-            <h1>
-                Menu
-            </h1>
-            <ul>
-                <li>
-                  <strong>Full Menu</strong>
-                </li>
-                <li>
-                  Party Menu
-                </li>
-            </ul>
-         </div>
-      </section>
-    )
+        <div className="flex-column-form">
+            <h3 className='text-center about-h'>
+            
+            </h3>
+            <div className="flex-column-form">
+            <div class='card-borderless mb-4'>
+                <div className='card-body-borderless'></div>
+              </div>
+            </div>
+        </div>
+    );
 }
 
 export default Menu;
